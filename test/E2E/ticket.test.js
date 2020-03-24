@@ -3,7 +3,11 @@ const puppeteer = require('puppeteer')
 const { config } = require('./jest-puppeteer.config')
 
 const App = require('../../app')
-const { config: serverConfig } = require('../../config/web.config')
+
+//we change the port here in order to make the server works on CI
+const serverConfig = {
+  port: 3000
+}
 
 describe('E2E tests: ticket output in each case of the document', () => {
   let app, browser, page
@@ -17,7 +21,7 @@ describe('E2E tests: ticket output in each case of the document', () => {
 
     app.run()
 
-    await page.goto('http://localhost')
+    await page.goto('http://localhost:3000')
   })
 
   beforeEach(async () => {
@@ -92,7 +96,7 @@ describe('E2E tests: ticket output in each case of the document', () => {
 
     await chocolateBoxImp.click()
 
-    await page.waitFor(10000)
+    await page.waitFor(12000)
 
     const productList = await page.$('#productsList')
 
