@@ -1,0 +1,38 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "a simple shopping webapp",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "deploy:docker": "docker-compose up",
+    "test": "jest --verbose --runInBand --detectOpenHandles",
+    "test:dev": "jest --watch",
+    "start:dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabloos/shoppingCart.git"
+  },
+  "keywords": [
+    "js",
+    "jest",
+    "MVC"
+  ],
+  "author": "Pablo Cumpian Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloos/shoppingCart/issues"
+  },
+  "homepage": "https://github.com/pabloos/shoppingCart#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "jest": "^25.1.0",
+    "jest-puppeteer": "^4.4.0",
+    "nodemon": "^2.0.2",
+    "puppeteer": "^2.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

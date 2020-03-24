@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Shopping Cart</title>
+
+        <!-- CSS Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+        
+        <!-- own CSS -->
+        <link rel="stylesheet" href="css/breadcumb.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/body.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Cart</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+
+            <div class="container" id="page"></div>
+
+            <div class="container" id="footer" style="margin-bottom: 15px;">
+                <ul class="list-group list-group-flush" id="productsList">
+                    <li class="list-group-item">Taxes: </li>
+                    <li class="list-group-item">TOTAL: </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JS Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+        <!-- own JS -->
+        <script src="./js/utils/components/createComponent.js"></script>
+        <script src="./js/utils/components/components.js"></script>
+
+        <script src="./js/utils/hash.js"></script>
+        <script src="./js/utils/removeRestore.js"></script>
+        <script src="./js/utils/idGenerator.js"></script>
+        <script src="./js/utils/getNameOnButton.js"></script>
+
+        <script src="./js/shopService.js"></script>
+
+        <script src="./js/MVC/EventEmitter.js"></script>
+        <script src="./js/MVC/form.model.js"></script>
+        <script src="./js/MVC/form.view.js"></script>
+        <script src="./js/MVC/form.controller.js"></script>
+       
+        <script src="./js/app.js"></script>
+
+        <script src="./js/onload.js"></script>
+     </body>
+</html>
