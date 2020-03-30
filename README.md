@@ -1,14 +1,8 @@
 
 # Shopping Cart
-This is a basic shopping webapp, built in order to show some technologies and software principles. Just an MVC pattern on the frontend, using bootstrap on the view; a couple of endpoints on the server side, and a bit of functional programing for compute the prices and taxes.
+This is a basic shopping webapp, built in order to show some technologies and software principles. Just a MVC pattern on the frontend, using bootstrap on the view; a couple of endpoints on the server side, and a bit of functional programing for compute the prices and taxes.
 
-All of the environment is setted with npm. If you have docker and docker compose you can package and deploy the app using npm
-
-```bash
-npm run deploy:docker
-```
-
-If you instead want to run it localy, previously you have to install all the dependecies in order to make the system work:
+All of the environment is setted with npm. If you want to run it localy, previously you have to install all the dependecies in order to make the system works:
 
 ```bash
 npm i
@@ -18,6 +12,12 @@ And then run the server with:
 
 ```bash
 npm start
+```
+
+If you have docker and docker compose you can package and deploy the app using npm
+
+```bash
+npm run deploy:docker
 ```
 
 ### Testing
